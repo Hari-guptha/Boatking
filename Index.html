@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondy Kings Boating</title>
+    <link rel="stylesheet" href="./Assets/Css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ---------------------Nav--------------------------->
+    <div id="NavPopUp">
+        <div style="display: flex;justify-content: end;">
+            <i id="NavClose" onclick="ClosePopUp()" class="fa-solid fa-x"></i>
+        </div>
+        <div style="margin: 10px 40px;">
+            <div style="display: flex;">
+                <img id="Logo" src="./Assets/Images/Logo.png" alt="Logo">
+            </div>
+            <div id="PhoneNavItems">
+                <h5 id="NavItem">Home</h5>
+                <h5 id="NavItem">Special Package</h5>
+                <h5 id="NavItem">Packages</h5>
+                <h5 id="NavItem">Contact Us</h5>
+                <h5 id="NavItem">About Us</h5>
+                <h5 id="NavBtn">Book Now</h5>
+            </div>
+        </div>
+    </div>
+    <div id="PageContent">
+        <div style="width: 100%;">
+            <div id="Navbar">
+                <img id="Logo" src="./Assets/Images/Logo.png" alt="Logo">
+                <div id="NavItems">
+                    <h5 id="NavItem">Home</h5>
+                    <h5 id="NavItem">Special Package</h5>
+                    <h5 id="NavItem">Packages</h5>
+                    <h5 id="NavItem">Contact Us</h5>
+                    <h5 id="NavItem">About Us</h5>
+                    <h5 id="NavBtn">Book Now</h5>
+                </div>
+                <i id="NavMenu" onclick="tiggerpopup()" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-----------------------End Nav--------------------------->
+        <div id="Section1">
+            <div id="sec1text">
+                <h4 id="welcometext" style="padding-top:5%;">
+                    Welcome to Your Boating
+                </h4>
+                <div style="display: flex;gap: 20px;">
+                    <h4 id="welcometext">
+                        Paradise
+                    </h4>
+                    <img id="welcomeimg" src="./Assets/Images/boat.png" alt="welcomeboat">
+                </div>
+            </div>
+            <div style="padding-bottom: 10%;">
+                <div id="sec1images">
+                    <div id="imgcon">
+                        <img id="sec1img" class="upperimage" src="./Assets/Images/sec1-1.png" alt="Image">
+                        <h5 id="imgcontent">Mangrove Forest</h5>
+                    </div>
+                    <div id="imgcon">
+                        <div>
+                            <img id="sec1img" class="downimage" src="./Assets/Images/sec1-2.png" alt="Image">
+                            <h5 id="imgcontent">River Mouth</h5>
+                        </div>
+                        <div style="display: flex;justify-content: center;margin-top:10% ;">
+                            <div id="bookbtn">
+                                <h4>Book Ride</h4>
+                                <img src="./Assets/Images/icons/arrow.png" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="imgcon">
+                        <img id="sec1img" class="upperimage" src="./Assets/Images/sec1-3.png" alt="Image">
+                        <h5 id="imgcontent">Arrikamedu</h5>
+                    </div>
+                    <div id="imgcon">
+                        <img id="sec1img" class="downimage" src="./Assets/Images/sec1-4.png" alt="Image">
+                        <h5 id="imgcontent">Fishing Harbour</h5>
+                    </div>
+                </div>
+                <img id="sec1rootimg" src="./Assets/Images/rootline.png" alt="Image">
+            </div>
+        </div>
+        <div id="Section" style="padding-top: 5%;">
+            <h3 id="sectionTitle">Special Package</h3>
+            <h4 id="sectionsub">Enjoy a Relaxing River Ride in Pondicherry with Our Special Private Packageas</h4>
+            <div style="display: flex;gap: 10%;">
+                <div id="imgcontiner">
+                    <img id="specpackimg" src="./Assets/Images/birthday.png " alt="SpecialPackage">
+                    <h4>Birthday Boat Ride</h4>
+                    <h6>Full Boat Experience with Décor & Cake Cutting</h6>
+                </div>
+                <div id="imgcontiner">
+                    <img id="specpackimg" src="./Assets/Images/couple.png   " alt="SpecialPackage">
+                    <h4>Romantic Couple's Ride</h4>
+                    <h6>Savor Music and Capture Cherished Moments Together</h6>
+                </div>
+                <div id="imgcontiner">
+                    <img id="specpackimg" src="./Assets/Images/family.png   " alt="SpecialPackage">
+                    <h4>Family Boat Ride</h4>
+                    <h6>Enjoy a Private Boat Ride </h6>
+                </div>
+            </div>
+        </div>
+        <div id="Section">
+            <h3 id="sectionTitle">Sailing Schedule</h3>
+            <h4 id="sectionsub" style="width: 50%;">Our Rides Run Throughout the Day to Fit Your Schedule. Whether You
+                Prefer a Morning Adventure, a Midday Escape, or a Sunset Cruise, We Have Timings to Suit Every
+                Preference.</h4>
+            <div style="display: flex;justify-content: center;">
+                <img id="timeimg" src="./Assets/Images/time.png" alt="Time">
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <img id="Boat2img" src="./Assets/Images/boat2.png" alt="Time">
+        </div>
+        <div style="height: 20px;width: 100%;background-color: black;">
+        </div>
+        <div id="Section" style="padding-top: 5%;">
+            <h3 id="sectionTitle">Choose Your Perfect Ride Time</h3>
+            <h4 id="sectionsub" style="width: 60%;">With Multiple Time Slots Throughout the Day, You Can Select the
+                Ideal Time to Set Sail. Whether You're an Early Riser or Prefer to Catch the Sunset, We've Got You
+                Covered.</h4>
+            <div style="display: flex;gap:20px;flex-wrap: wrap;margin: 20px 0;">
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride1.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride2.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride3.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride4.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride4.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride4.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride4.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride4.png" alt="Ride1">
+                    <h5>8:00 Am - 9:20 Am</h5>
+                </div>
+            </div>
+        </div>
+        <div id="Section" style="display: flex;margin: 5% 0;gap: 20px;">
+            <img id="saftymainimg" src="./Assets/Images/safty.png" alt="safty">
+            <div id="saftycontent">
+                <h3>Sailing Safely</h3>
+                <h4>Ensuring Your Safety is Our First Priority – Every Ride, Every Time</h4>
+
+                <h5 style="margin-top: 10%;">Safety Equipment</h5>
+                <div id="saftyicon">
+                    <img src="./Assets/Images/icons/lifejacket.png" alt="icon">
+                    <h6>Life Jacket</h6>
+                </div>
+                <div id="saftyicon">
+                    <img src="./Assets/Images/icons/lifeboat.png" alt="icon">
+                    <h6>Lifebuoys</h6>
+                </div>
+                <div id="saftyicon">
+                    <img src="./Assets/Images/icons/rescuetube.png" alt="icon">
+                    <h6>Rescue Tubes</h6>
+                </div>
+                <div id="saftyicon">
+                    <img src="./Assets/Images/icons/rescuepeopel.png" alt="icon">
+                    <h6>Rescue Boats</h6>
+                </div>
+                <h5 style="margin-top: 10%;font-size: 14px;font-weight: 400;">We’ve Got You Covered with Accident
+                    Insurance Up to ₹5 Lakh – Your Safety is Always Our Commitment</h5>
+            </div>
+        </div>
+        <div id="Section" style="padding-top: 5%;">
+            <h3 id="sectionTitle">Sailing Adventures Through the Lens</h3>
+            <h4 id="sectionsub" style="width: 60%;">Explore breathtaking images that capture the thrill, serenity, and
+                majesty of sailing in this unique coastal paradise. From serene sunsets over the Bay of Bengal to
+                exhilarating local regattas, our gallery celebrates the vibrant spirit of sailing in Pondicherry. </h4>
+            <div id="gallery">
+                <img id="galleryimage" src="./Assets/Images/gallery1.png" alt="Image">
+                <img id="galleryimage" src="./Assets/Images/gallery2.png" alt="Image">
+                <img id="galleryimage" src="./Assets/Images/gallery3.png" alt="Image">
+                <img id="galleryimage" src="./Assets/Images/gallery4.png" alt="Image">
+            </div>
+        </div>
+        <div id="Section" style="padding-top: 5%;">
+            <h3 id="sectionTitle">Contact Us</h3>
+            <h4 id="sectionsub" style="width: 60%;">We’d love to hear from you! Whether you have questions, need
+                assistance, or want to share your sailing experiences, our team is here to help. Reach out to us
+                anytime—we’re just a message away.</h4>
+            <form action="#" method="post" id="contact">
+                <div id="contactcontent">
+                    <h4>Name</h4>
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div id="contactcontent" style="margin-top: 25px;">
+                    <h4>Email</h4>
+                    <input type="text" placeholder="Enter your Email">
+                </div>
+                <div id="contactcontent" style="margin-top: 25px;">
+                    <h4>Message</h4>
+                    <input type="text" placeholder="Enter your Message">
+                </div>
+                <div style="display: flex;justify-content: center;">
+                    <h4 id="subbtn">Submit</h4>
+                </div>
+            </form>
+        </div>
+        <div id="Footer" style="display: flex; justify-content: space-between; padding: 5% 10%;">
+            <div id="FooterMain">
+                <h4>Pondy Kings Boating</h4>
+                <h5>Welcome to Pondy Kings Boating! We proudly serve four picturesque locations: Mangrove, Pondy Fishing
+                    Harbors, Arikimedu, and River Mouyh. Our mission is to provide unforgettable boating experiences,
+                    whether you're looking for a peaceful day on the water or an adventure. Join us at any of our
+                    beautiful destinations for an exceptional boating experience..</h5>
+            </div>
+            <div id="FooterLinks">
+                <h5>Home</h5>
+                <h5>Package</h5>
+                <h5>Special Package</h5>
+                <h5>About Us</h5>
+                <h5>Contact Us</h5>
+            </div>
+            <div id="FooterLinks">
+                <h4>Contact Us </h4>
+                <h5>Office Number : +91 7094727897</h5>
+                <h5>partners Number : +91 9092725689 , +91 7092854728 </h5>
+
+            </div>
+            <div>
+                <h5 id="footerbtn">Get Proposal</h5>
+                <h6 id="socialicons">Social Media</h6>
+                <div style="display: flex; justify-content: center;">
+                    <div style="display: flex; gap: 20px;">
+                        <a href="">
+                            <img id="footericon" src="./Assets/Images/icons/Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/pondy_kings_boating?igsh=MWpkMHFnNzV4cnVtcA==">
+                            <img id="footericon" src="./Assets/Images/icons/Linkdin.svg" alt="Linkdin">
+                        </a>
+                        <a href="">
+                            <img id="footericon" src="./Assets/Images/icons/whatsapp.png" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rr">
+            <h4>@All Rights Reserved by Pondy kings Boating</h4>
+        </div>
+    </div>
+    <script src="./Assets/Js/Script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondy Kings Boating</title>
+    <link rel="stylesheet" href="./Assets/Css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ---------------------Nav--------------------------->
+    <div id="NavPopUp">
+        <div style="display: flex;justify-content: end;">
+            <i id="NavClose" onclick="ClosePopUp()" class="fa-solid fa-x"></i>
+        </div>
+        <div style="margin: 10px 40px;">
+            <div style="display: flex;">
+                <img id="Logo" src="./Assets/Images/Logo.png" alt="Logo">
+            </div>
+            <div id="PhoneNavItems">
+                <h5 id="NavItem">Home</h5>
+                <h5 id="NavItem">Special Package</h5>
+                <h5 id="NavItem">Packages</h5>
+                <h5 id="NavItem">Contact Us</h5>
+                <h5 id="NavItem">About Us</h5>
+                <h5 id="NavBtn">Book Now</h5>
+            </div>
+        </div>
+    </div>
+    <div id="PageContent">
+        <div style="width: 100%;height: 50px;">
+            <div id="Navbar">
+                <img id="Logo" src="./Assets/Images/Logo.png" alt="Logo">
+                <div id="NavItems">
+                    <h5 id="NavItem">Home</h5>
+                    <h5 id="NavItem">Special Package</h5>
+                    <h5 id="NavItem">Packages</h5>
+                    <h5 id="NavItem">Contact Us</h5>
+                    <h5 id="NavItem">About Us</h5>
+                    <h5 id="NavBtn">Book Now</h5>
+                </div>
+                <i id="NavMenu" onclick="tiggerpopup()" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-----------------------End Nav--------------------------->
+        <div id="Section">
+            <div style="display: flex;">
+                <div id="PaymentForm">
+                    <div id="paymentcardtitle">
+                        <h5>1</h5>
+                        <h6>Ride Detials</h6>
+                    </div>
+                    <form id="payment" action="#" method="post" style="padding: 20px 30px;">
+                        <div id="paymentitems">
+                            <h5>Name</h5>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div id="paymentitems">
+                            <h5>Email</h5>
+                            <input type="text" placeholder="Enter your Email">
+                        </div>
+                        <div id="paymentitems">
+                            <h5>Phone Number</h5>
+                            <input type="text" placeholder="Enter your Phone Number">
+                        </div>
+                        <div id="paymentitems">
+                            <h5>Number of Adults</h5>
+                            <div class="number-input">
+                                <button type="button" id="decreaseAdults" onclick="changeValue('number', -1)">-</button>
+                                <input type="number" id="number" value="0" min="0" max="100">
+                                <button type="button" id="increaseAdults" onclick="changeValue('number', 1)">+</button>
+                            </div>
+                        </div>
+
+                        <div id="paymentitems">
+                            <h5>Number of Children</h5>
+                            <div class="number-input">
+                                <button type="button" id="decreaseChildren"
+                                    onclick="changeValue('number2', -1)">-</button>
+                                <input type="number" id="number2" value="0" min="0" max="100">
+                                <button type="button" id="increaseChildren"
+                                    onclick="changeValue('number2', 1)">+</button>
+                            </div>
+                        </div>
+
+                        <div id="paymentitems">
+                            <h5>Select the Time Slot</h5>
+                            <div class="dropdown-container">
+                                <input type="text" id="dropdown-input" class="dropdown-input"
+                                    placeholder="Select or type...">
+                                <div id="dropdown-list" class="dropdown-list hidden">
+                                    <div class="dropdown-item">8:00 Am - 9:20 Am</div>
+                                    <div class="dropdown-item">9:30 Am - 10:50 Am</div>
+                                    <div class="dropdown-item">11:00 Am - 12:20 Pm</div>
+                                    <div class="dropdown-item">O12:20 Pm - 1:40 Pm</div>
+                                    <div class="dropdown-item">3:00 Pm - 4:20 Pm</div>
+                                    <div class="dropdown-item">4:20 Pm - 5:20 Pm</div>
+                                    <div class="dropdown-item">5:20 Pm - 6:30 Pm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="paymentitems">
+                            <h5>Select the date</h5>
+                            <input style="margin-top: 0;" id="ridedate" type="date" placeholder="Check Date?">
+                        </div>
+                        <h5 type="submit" id="ridebookbtn" style="font-weight: 400;">Save</h5>
+                    </form>
+
+                </div>
+                <div style="width: 40%;margin: 5%;">
+                    <div id="pricecalculator">
+                        <h4>Price Detials</h4>
+                        <div>
+                            <h6> 1 Adults</h6>
+                            <h6>Rs 500</h6>
+                        </div>
+                        <div>
+                            <h6> 2 Children</h6>
+                            <h6>Rs 500</h6>
+                        </div>
+                        <div>
+                            <h6>GST</h6>
+                            <h6>Rs 20</h6>
+                        </div>
+                        <div>
+                            <h6>Total</h6>
+                            <h6>Rs 1020</h6>
+                        </div>
+                    </div>
+                    <h5 id="ridebookbtn" style="width: 100%;font-weight: 400;">Pay Now</h5>
+
+                </div>
+            </div>
+        </div>
+        <div id="Footer" style="display: flex; justify-content: space-between; padding: 5% 10%;">
+            <div id="FooterMain">
+                <h4>Pondy Kings Boating</h4>
+                <h5>Welcome to Pondy Kings Boating! We proudly serve four picturesque locations: Mangrove, Pondy Fishing
+                    Harbors, Arikimedu, and River Mouyh. Our mission is to provide unforgettable boating experiences,
+                    whether you're looking for a peaceful day on the water or an adventure. Join us at any of our
+                    beautiful destinations for an exceptional boating experience..</h5>
+            </div>
+            <div id="FooterLinks">
+                <h5>Home</h5>
+                <h5>Package</h5>
+                <h5>Special Package</h5>
+                <h5>About Us</h5>
+                <h5>Contact Us</h5>
+            </div>
+            <div id="FooterLinks">
+                <h4>Contact Us </h4>
+                <h5>Office Number : +91 7094727897</h5>
+                <h5>partners Number : +91 9092725689 , +91 7092854728 </h5>
+
+            </div>
+            <div>
+                <h5 id="footerbtn">Get Proposal</h5>
+                <h6 id="socialicons">Social Media</h6>
+                <div style="display: flex; justify-content: center;">
+                    <div style="display: flex; gap: 20px;">
+                        <a href="">
+                            <img id="footericon" src="./Assets/Images/icons/Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/pondy_kings_boating?igsh=MWpkMHFnNzV4cnVtcA==">
+                            <img id="footericon" src="./Assets/Images/icons/Linkdin.svg" alt="Linkdin">
+                        </a>
+                        <a href="">
+                            <img id="footericon" src="./Assets/Images/icons/whatsapp.png" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rr">
+            <h4>@All Rights Reserved by Pondy kings Boating</h4>
+        </div>
+        <script>
+
+            document.getElementById('ridebookbtn').addEventListener('click', function () {
+                document.getElementById('payment').submit();
+            });
+
+            function changeValue(id, delta) {
+                var input = document.getElementById(id);
+                var currentValue = parseInt(input.value, 10);
+                var min = parseInt(input.min, 10);
+                var max = parseInt(input.max, 10);
+                var newValue = currentValue + delta;
+
+                // Ensure the new value is within the min and max range
+                if (newValue >= min && newValue <= max) {
+                    input.value = newValue;
+
+                    // Optionally update hidden inputs
+                    if (id === 'number') {
+                        document.getElementById('hiddenAdults').value = newValue;
+                    } else if (id === 'number2') {
+                        document.getElementById('hiddenChildren').value = newValue;
+                    }
+                }
+            }
+
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const input = document.getElementById('dropdown-input');
+                const dropdownList = document.getElementById('dropdown-list');
+                const items = dropdownList.getElementsByClassName('dropdown-item');
+
+                input.addEventListener('input', function () {
+                    const filter = input.value.toLowerCase();
+                    let hasVisibleItems = false;
+
+                    for (let item of items) {
+                        if (item.textContent.toLowerCase().includes(filter)) {
+                            item.style.display = '';
+                            hasVisibleItems = true;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+
+                    dropdownList.classList.toggle('hidden', !hasVisibleItems);
+                });
+
+                input.addEventListener('focus', function () {
+                    dropdownList.classList.remove('hidden');
+                });
+
+                input.addEventListener('blur', function () {
+                    setTimeout(() => {
+                        dropdownList.classList.add('hidden');
+                    }, 200); // Delay to allow click event on dropdown items
+                });
+
+                for (let item of items) {
+                    item.addEventListener('click', function () {
+                        input.value = '';
+                        input.placeholder = item.textContent;
+                        dropdownList.classList.add('hidden');
+                    });
+                }
+            });
+        </script>
+        <script>
+            document.getElementById('ridedate').addEventListener('click', function (event) {
+                // Open the date picker
+                this.showPicker();
+            });
+
+            // Optional: To ensure the input field is not manually editable
+            document.getElementById('ridedate').addEventListener('keydown', function (event) {
+                event.preventDefault();
+            });
+        </script>
+
+        <script src="./Assets/Js/Script.js"></script>
+</body>
+
+</html>

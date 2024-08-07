@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondy Kings Boating</title>
+    <link rel="stylesheet" href="./Assets/Css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ---------------------Nav--------------------------->
+    <div id="NavPopUp">
+        <div style="display: flex;justify-content: end;">
+            <i id="NavClose" onclick="ClosePopUp()" class="fa-solid fa-x"></i>
+        </div>
+        <div style="margin: 10px 40px;">
+            <div style="display: flex;">
+                <img id="Logo" src="./Assets/Images/Logo.png" alt="Logo">
+            </div>
+            <div id="PhoneNavItems">
+                <h5 id="NavItem">Home</h5>
+                <h5 id="NavItem">Special Package</h5>
+                <h5 id="NavItem">Packages</h5>
+                <h5 id="NavItem">Contact Us</h5>
+                <h5 id="NavItem">About Us</h5>
+                <h5 id="NavBtn">Book Now</h5>
+            </div>
+        </div>
+    </div>
+    <div id="PageContent">
+        <div style="width: 100%;height: 50px;">
+            <div id="Navbar">
+                <img id="Logo" src="./Assets/Images/Logo.png" alt="Logo">
+                <div id="NavItems">
+                    <h5 id="NavItem">Home</h5>
+                    <h5 id="NavItem">Special Package</h5>
+                    <h5 id="NavItem">Packages</h5>
+                    <h5 id="NavItem">Contact Us</h5>
+                    <h5 id="NavItem">About Us</h5>
+                    <h5 id="NavBtn">Book Now</h5>
+                </div>
+                <i id="NavMenu" onclick="tiggerpopup()" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-----------------------End Nav--------------------------->
+        <div id="Section">
+            <div id="Normal_Package">
+                <img id="packageimg" src="./Assets/Images/Family.png" alt="Image">
+                <div id="PackageContent">
+                    <div id="ridecardtitle">
+                        <h3>Family Ride</h3>
+                        <h5>Full Boat</h5>
+                    </div>
+                    <h4 style="color:#05334B">1 Hour</h4>
+                    <h5 id="ridecardcontent" style="width: 100%;">
+                        Embark on a memorable Family Separate Boat Ride, where your family has the boat all to yourselves for one to one and a half hours. No outsiders—just quality time with your loved ones as you explore four stunning locations: Mangrove Forest, Arikkimedu, Fishing Harbour, and River Mouth. Enjoy the privacy and comfort of a dedicated boat, making it a perfect outing for family bonding and adventure.
+                    </h5>
+                    <div style="display: flex;justify-content: space-between;margin-top: 7%;">
+                        <div id="ridepackageiconsection" style="margin-left: 10%;">
+                            <img id="ridepackageicon" src="./Assets/Images/icons/adult.png" alt="Child">
+                            <div>
+                                <h4>Rs 6000</h4>
+                                <h5>Max 12 Members</h5>
+                            </div>
+                        </div>
+                        <div style="height:80px; width: 1px;background-color: black;">
+                        </div>
+                        <div id="ridepackageiconsection" style="margin-right: 10%;">
+                            <img id="ridepackageicon" src="./Assets/Images/icons/adult.png" alt="Adult">
+                            <div>
+                                <h4>Rs 12000</h4>
+                                <h5>Max 24 Members</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="checkdatetitle">Check Date ?</h5>
+                    <input id="ridedate" type="date" placeholder="Check Date?" >
+                    <h5 id="ridebookbtn">Book Ride</h5>
+                </div>
+            </div>
+        </div>
+        <div id="Section">
+            <div style="display: flex;gap:20px;flex-wrap: wrap;margin: 40px 0;">
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride1.png" alt="Ride1">
+                    <h5 style="font-weight: 400;">8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride2.png" alt="Ride1">
+                    <h5 style="font-weight: 400;">8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride3.png" alt="Ride1">
+                    <h5 style="font-weight: 400;">8:00 Am - 9:20 Am</h5>
+                </div>
+                <div id="RideCard">
+                    <img src="./Assets/Images/Ride4.png" alt="Ride1">
+                    <h5 style="font-weight: 400;">8:00 Am - 9:20 Am</h5>
+                </div>
+            </div>
+        </div>
+        <div id="Footer" style="display: flex; justify-content: space-between; padding: 5% 10%;">
+            <div id="FooterMain">
+                <h4>Pondy Kings Boating</h4>
+                <h5>Welcome to Pondy Kings Boating! We proudly serve four picturesque locations: Mangrove, Pondy Fishing
+                    Harbors, Arikimedu, and River Mouyh. Our mission is to provide unforgettable boating experiences,
+                    whether you're looking for a peaceful day on the water or an adventure. Join us at any of our
+                    beautiful destinations for an exceptional boating experience..</h5>
+            </div>
+            <div id="FooterLinks">
+                <h5>Home</h5>
+                <h5>Package</h5>
+                <h5>Special Package</h5>
+                <h5>About Us</h5>
+                <h5 >Contact Us</h5>
+            </div>
+            <div id="FooterLinks">
+                <h4>Contact Us </h4>
+                <h5>Office Number : +91 7094727897</h5>
+                <h5>partners Number : +91 9092725689 , +91 7092854728 </h5>
+
+            </div>
+            <div>
+                <h5 id="footerbtn">Get Proposal</h5>
+                <h6 id="socialicons">Social Media</h6>
+                <div style="display: flex; justify-content: center;">
+                    <div style="display: flex; gap: 20px;">
+                        <a href="">
+                            <img id="footericon" src="./Assets/Images/icons/Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/pondy_kings_boating?igsh=MWpkMHFnNzV4cnVtcA==">
+                            <img id="footericon" src="./Assets/Images/icons/Linkdin.svg" alt="Linkdin">
+                        </a>
+                        <a href="">
+                            <img id="footericon" src="./Assets/Images/icons/whatsapp.png" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rr">
+            <h4>@All Rights Reserved by Pondy kings Boating</h4>
+        </div>
+        <script>
+            document.getElementById('ridedate').addEventListener('click', function(event) {
+                // Open the date picker
+                this.showPicker();
+            });
+    
+            // Optional: To ensure the input field is not manually editable
+            document.getElementById('ridedate').addEventListener('keydown', function(event) {
+                event.preventDefault();
+            });
+        </script>
+
+        <script src="./Assets/Js/Script.js"></script>
+</body>
+
+</html>

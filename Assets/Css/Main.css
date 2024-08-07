@@ -1,0 +1,737 @@
+:root {
+    --primary-color: #05334B;
+    --secondary-color: #1e475d;
+}
+
+* {
+    padding: 0 ;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body {
+    overflow-x: hidden;   
+    height: 100vh; 
+}
+
+
+#Navbar {
+    box-sizing: border-box;
+    padding: 1% 5%;
+    display: flex;
+    width: 100%;
+    z-index:1001;
+    background-color: white;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Logo {
+    width: 60px;
+}
+
+#NavItems {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#NavItem {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#NavBtn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+}
+#NavBtn:hover{
+    background-color: var(--secondary-color);
+}
+
+#NavMenu {
+    display: none;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+#NavClose {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    #NavItems {
+        display: none;
+    }
+
+    #NavMenu {
+        display: block;
+    }
+
+    #Navbar {
+        padding: 5%;
+    }
+}
+
+#NavPopUp {
+    display: none;
+    z-index: 1001;
+    position: absolute;
+    width: fit-content;
+    height: 100vh;
+    padding: 5%;
+    transition: left 0.5s ease;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#PhoneNavItems {
+    margin: 50% 0;
+}
+
+#PhoneNavItems #NavItem {
+    margin: 30px 0px;
+}
+
+#PhoneNavItems #NavBtn {
+    margin: 50px 0px;
+    cursor: pointer;
+}
+
+#PageContent {
+    position: relative;
+}
+
+#Section1 {
+    padding: 3% 5%;
+}
+
+#welcometext {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 500;
+    font-size: 40px;
+    font-style: normal;
+}
+
+#welcomeimg {
+    width: 8%;
+    height: 8%;
+}
+
+#sec1images {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    z-index: 1000;
+    width: 90%;
+    position: absolute;
+}
+
+#sec1rootimg {
+    position: relative;
+    width: 90%;
+    height: 40vh;
+    padding: 1% 10%;
+}
+
+.upperimage {
+    padding-top: 50%;
+}
+
+
+#sec1text {
+    padding-left: 25%;
+}
+
+#sec1img {
+    width: 100%;
+}
+
+#imgcontent {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+#bookbtn {
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 20px 40px;
+    border-radius: 50px;
+    gap: 10px;
+    width: fit-content;
+    height: 55px;
+    cursor: pointer;
+}
+#bookbtn{
+    background-color: var(--secondary-color);
+}
+
+#bookbtn h4 {
+    height: fit-content;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+#bookbtn img {
+    width: 15px;
+    height: 15px;
+}
+
+#Section {
+    padding: 0 5%;
+}
+
+#sectionTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+#sectionsub {
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+    width: 30%;
+    color: black;
+}
+
+#specpackimg {
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 20px;
+    height: 70%;
+}
+
+#imgcontiner {
+    padding: 5% 0% 0% 0%;
+}
+
+#imgcontiner h4 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 3% 0 3%;
+    color: var(--primary-color);
+}
+
+#imgcontiner h6 {
+    font-size: 12px;
+    padding: 2px 3%;
+    font-weight: 300;
+}
+
+#timeimg {
+    margin: 5% 0;
+    width: 60%;
+    height: fit-content;
+}
+
+#Boat2img {
+    width: 40%;
+}
+
+#RideCard {
+    height: fit-content;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+#RideCard img {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 200px;
+}
+
+#RideCard h5 {
+    border-radius: 0 0 15px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#saftymainimg {
+    width: 35%;
+    height: 50%;
+    margin: 0 5%;
+    border-radius: 20px !important;
+}
+
+#saftyicon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 15px 0px;
+    gap: 20px;
+    align-self: center;
+}
+
+#saftyicon h6 {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#saftyicon img {
+    width: 25px;
+    height: 25px;
+}
+
+#saftycontent h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+#saftycontent h4 {
+    font-size: 14px;
+    width: 60%;
+    font-weight: 400;
+}
+
+#saftycontent h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#galleryimage {
+    width: 5%;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Optional: Make images full width on smaller screens */
+@media (max-width: 600px) {
+    #gallery img {
+        flex: 1 1 100%;
+    }
+}
+
+
+#contact {
+    padding: 5%;
+    margin: 5px 10%;
+    border-radius: 10px;
+    margin-top: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#contactcontent h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#contactcontent input {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 12px;
+    border: none !important;
+    /* outline: none !important; */
+    background-color: #EEEEEE;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#subbtn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 20px 10%;
+    margin-top: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#subbtn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+
+
+
+
+#Footer {
+    color: white;
+    margin-top: 5%;
+    background-color: var(--primary-color);
+}
+
+#FooterMain {
+    width: 30%;
+}
+
+#FooterMain h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+#FooterMain h5 {
+    font-size: 12px;
+    font-weight: 300;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#rr {
+    background-color: #000000;
+    color: white;
+    padding: 2% 0;
+    text-align: center;
+}
+
+#rr h4 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#footerbtn {
+    background-color: #000000;
+    padding: 20px 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+#footerbtn:hover {
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+#socialicons {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#footericon {
+    width: 30px;
+    cursor: pointer;
+}
+
+#FooterLinks h5 {
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+#FooterLinks h4 {
+    font-size: 16px;
+    font-weight: 500 !important;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+#FooterLinks h5:hover {
+    color: var(--secondary-color);
+}
+
+#Normal_Package {
+    display: flex;
+    gap: 5%;
+    margin-top: 2%;
+}
+
+#packageimg {
+    width: 70vw;
+    height: 78vh;
+    margin:  20px;
+    border-radius: 10px;
+}
+
+#PackageContent{
+    width: 100%;
+    margin-top: 3%;
+}
+
+#ridecardtitle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+
+#ridecardtitle h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#ridecardtitle h5{
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+#PackageContent h4{
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+#PackageContent h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#ridecardcontent{
+    font-size: 12px !important;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 60%;
+}
+
+#ridecardrouteimg{
+    margin-top: 5%;
+        width: 80%;
+}
+#ridepackageiconsection{
+    display: flex;
+    gap: 20px;
+}
+
+#ridepackageiconsection h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#ridepackageiconsection h5{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+#ridepackageicon{
+    width: 50px;
+    height: 50px;
+}
+
+#ridedate{
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #F6F6F6;
+    border: none;
+    outline: none;
+    padding: 10px 6%;
+    margin-top: 3% ;
+    border-radius: 10px;
+    color: var(--primary-color);
+}
+
+#ridebookbtn{
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: 20px !important;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ridebookbtn:hover{
+    background-color: var(--secondary-color);
+}
+
+#checkdatetitle{
+    font-size: 12px !important;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 30px !important;
+    color: var(--primary-color);
+}
+
+#rideprice{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#spctitle{
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#spcfeature img{
+    width: 20px;
+    height: 20px;
+}
+
+#spcfeature h5{
+    margin: 0;
+}
+
+#PaymentForm{
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin: 5%;
+}
+
+
+
+#paymentcardtitle{
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--primary-color);
+}
+
+#paymentcardtitle h5{
+    font-size: 14px;
+    background-color: white;
+    padding: 2px 10px;
+    height: fit-content;
+    font-weight: 400;
+}
+
+#paymentcardtitle h6{
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 300;
+}
+
+#paymentitems h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#paymentitems input{
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+
+.number-input {
+    display: flex;
+    align-items: center;
+}
+
+.number-input input {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.number-input button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.number-input button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}   
+
+
+.dropdown-container {
+    position: relative;
+    width: 100%;
+}
+.dropdown-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    z-index: 1000;
+}
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+}
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+.hidden {
+    display: none;
+}
+
+#pricecalculator{
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#pricecalculator h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#pricecalculator div{
+display: flex;
+justify-content: space-between;
+margin: 20px 0;
+}
+
+#pricecalculator div h6{
+    font-size: 14px;
+    font-weight: 400;
+    }
