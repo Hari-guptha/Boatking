@@ -4,15 +4,15 @@
 }
 
 * {
-    padding: 0 ;
+    padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
     
 }
 
 body {
-    overflow-x: hidden;   
-    height: 100vh; 
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 
@@ -21,7 +21,7 @@ body {
     padding: 1% 5%;
     display: flex;
     width: 100%;
-    z-index:1001;
+    z-index: 1001;
     background-color: white;
     position: fixed;
     justify-content: space-between;
@@ -45,6 +45,10 @@ body {
     cursor: pointer;
 }
 
+#NavItem:hover {
+    color: #000000;
+}
+
 #NavBtn {
     background-color: var(--primary-color);
     color: white;
@@ -55,7 +59,8 @@ body {
     font-weight: 300;
     cursor: pointer;
 }
-#NavBtn:hover{
+
+#NavBtn:hover {
     background-color: var(--secondary-color);
 }
 
@@ -87,7 +92,8 @@ body {
 #NavPopUp {
     display: none;
     z-index: 1001;
-    position: absolute;
+    position: fixed;
+    z-index: 1009;
     width: fit-content;
     height: 100vh;
     padding: 5%;
@@ -134,7 +140,7 @@ body {
     gap: 30px;
     margin-top: 20px;
     z-index: 1000;
-    width: 90%;
+    width: 100%;
     position: absolute;
 }
 
@@ -176,7 +182,8 @@ body {
     height: 55px;
     cursor: pointer;
 }
-#bookbtn{
+
+#bookbtn:hover {
     background-color: var(--secondary-color);
 }
 
@@ -254,6 +261,12 @@ body {
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 200px;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 #RideCard h5 {
@@ -421,7 +434,7 @@ body {
     font-weight: 400;
     cursor: pointer;
     border-radius: 10px;
-    
+
 }
 
 #footerbtn:hover {
@@ -470,89 +483,91 @@ body {
 #packageimg {
     width: 70vw;
     height: 78vh;
-    margin:  20px;
+    margin: 20px;
     border-radius: 10px;
 }
 
-#PackageContent{
+#PackageContent {
     width: 100%;
     margin-top: 3%;
 }
 
-#ridecardtitle{
+#ridecardtitle {
     width: 100%;
     display: flex;
     justify-content: space-between !important;
 }
 
-#ridecardtitle h3{
+#ridecardtitle h3 {
     font-size: 20px;
     font-weight: 500;
 }
 
-#ridecardtitle h5{
+#ridecardtitle h5 {
     font-size: 12px;
     color: var(--primary-color);
     font-weight: 400;
 }
 
-#PackageContent h4{
+#PackageContent h4 {
     font-size: 14px;
     margin-top: 10px;
     font-weight: 400;
 }
 
-#PackageContent h5{
+#PackageContent h5 {
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px;
 }
 
-#ridecardcontent{
+#ridecardcontent {
     font-size: 12px !important;
     font-weight: 400;
     margin-top: 10px;
     width: 60%;
 }
 
-#ridecardrouteimg{
+#ridecardrouteimg {
     margin-top: 5%;
-        width: 80%;
-}
-#ridepackageiconsection{
-    display: flex;
-    gap: 20px;
+    width: 80%;
 }
 
-#ridepackageiconsection h4{
+#ridepackageiconsection {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#ridepackageiconsection h4 {
     font-size: 16px;
     font-weight: 500;
 }
 
-#ridepackageiconsection h5{
+#ridepackageiconsection h5 {
     font-size: 12px;
     font-weight: 400;
 }
 
 
-#ridepackageicon{
+#ridepackageicon {
     width: 50px;
     height: 50px;
 }
 
-#ridedate{
-    width: 90%;
+#ridedate {
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #F6F6F6;
     border: none;
     outline: none;
     padding: 10px 6%;
-    margin-top: 3% ;
+    margin-top: 3%;
     border-radius: 10px;
     color: var(--primary-color);
 }
 
-#ridebookbtn{
+#ridebookbtn {
     color: white;
     background-color: var(--primary-color);
     text-align: center;
@@ -563,11 +578,11 @@ body {
     cursor: pointer;
 }
 
-#ridebookbtn:hover{
+#ridebookbtn:hover {
     background-color: var(--secondary-color);
 }
 
-#checkdatetitle{
+#checkdatetitle {
     font-size: 12px !important;
     font-weight: 400;
     margin-left: 20px;
@@ -575,29 +590,29 @@ body {
     color: var(--primary-color);
 }
 
-#rideprice{
+#rideprice {
     font-size: 20px;
     font-weight: 500;
     margin-top: 30px;
 }
 
-#spctitle{
+#spctitle {
     color: var(--primary-color);
     font-size: 12px;
     font-weight: 400;
     margin-top: 20px;
 }
 
-#spcfeature img{
+#spcfeature img {
     width: 20px;
     height: 20px;
 }
 
-#spcfeature h5{
+#spcfeature h5 {
     margin: 0;
 }
 
-#PaymentForm{
+#PaymentForm {
     width: 60%;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     margin: 5%;
@@ -605,7 +620,7 @@ body {
 
 
 
-#paymentcardtitle{
+#paymentcardtitle {
     display: flex;
     padding: 10px 20px;
     gap: 20px;
@@ -614,7 +629,7 @@ body {
     background-color: var(--primary-color);
 }
 
-#paymentcardtitle h5{
+#paymentcardtitle h5 {
     font-size: 14px;
     background-color: white;
     padding: 2px 10px;
@@ -622,20 +637,20 @@ body {
     font-weight: 400;
 }
 
-#paymentcardtitle h6{
+#paymentcardtitle h6 {
     font-size: 14px;
     padding: 5px 10px;
     color: white;
     font-weight: 300;
 }
 
-#paymentitems h5{
+#paymentitems h5 {
     font-size: 14px;
     font-weight: 400;
     margin-top: 20px;
 }
 
-#paymentitems input{
+#paymentitems input {
     font-size: 14px;
     font-weight: 400;
     border: none;
@@ -675,13 +690,14 @@ body {
 .number-input button:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
-}   
+}
 
 
 .dropdown-container {
     position: relative;
     width: 100%;
 }
+
 .dropdown-input {
     width: 100%;
     padding: 8px;
@@ -689,6 +705,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .dropdown-list {
     position: absolute;
     top: 100%;
@@ -701,37 +718,273 @@ body {
     background-color: white;
     z-index: 1000;
 }
+
 .dropdown-item {
     padding: 8px;
     cursor: pointer;
     font-size: 12px;
     font-weight: 400;
 }
+
 .dropdown-item:hover {
     background-color: #f0f0f0;
 }
+
 .hidden {
     display: none;
 }
 
-#pricecalculator{
+#pricecalculator {
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-#pricecalculator h4{
+#pricecalculator h4 {
     font-size: 20px;
     font-weight: 400;
 }
 
-#pricecalculator div{
-display: flex;
-justify-content: space-between;
-margin: 20px 0;
+#pricecalculator div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-#pricecalculator div h6{
+.LAP {
+    display: none;
+}
+
+.PH {
+    display: none !important;
+}
+
+#RecCard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+#pricecalculator div h6 {
     font-size: 14px;
     font-weight: 400;
+}
+
+#Aboutpagecontent span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+#Aboutpagecontent li {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 15px 0px;
+}
+
+#aboutusimg {
+    margin-top: 5%;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#RideCard:hover img {
+    -webkit-filter: brightness(100%);
+}
+
+@media only screen and (max-width:600px) {
+    #sec1images {
+        flex-direction: column;
+        position: relative;
     }
+
+    #sec1text {
+        padding-top: 30%;
+        padding-left: 0;
+
+    }
+
+    #sec1rootimg {
+        display: none;
+    }
+
+    #Spccards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ridecards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #FooterMain h4 {
+        width: 50vw;
+    }
+
+    #FooterMain h5 {
+        width: 80vw;
+    }
+
+    #FooterLinks {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .PC {
+        display: none !important;
+    }
+
+    #FooterLinks h5 {
+        font-size: 14px;
+    }
+
+    .PH {
+        display: block !important;
+    }
+
+    #footerbtn {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    #rr {
+        padding: 20px 0px;
+    }
+
+    #welcometext {
+        text-align: center;
+    }
+
+    #sec1welcome {
+        justify-content: center;
+    }
+
+    #welcomeimg {
+        width: 60px;
+    }
+
+    .upperimage {
+        padding: 0px;
+    }
+
+    #imgcon {
+        width: 100%;
+        text-align: center;
+    }
+
+    #sec1images {
+        width: 100%;
+    }
+
+    #sec1img {
+        width: 100%;
+    }
+
+    #sectionsub {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    #imgcontiner {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 2%;
+        border-radius: 20px;
+        margin-top: 12%;
+    }
+
+    #specpackimg {
+        margin-top: 0px;
+    }
+
+    #sectionTitle {
+        margin: 20% 0 0 0 !important;
+    }
+
+    #timeimg {
+        width: 100%;
+    }
+
+    #saftymainimg {
+        margin: 0;
+        width: 100%;
+    }
+
+    #saftycontent h3 {
+        margin-top: 30px;
+    }
+
+    #saftycontent h4 {
+        width: 100%;
+    }
+
+    #contact {
+        margin: 10px 0px;
+    }
+
+    #Normal_Package {
+        flex-direction: column;
+    }
+
+    #packageimg {
+        width: 90vw;
+        height: 300px;
+        margin: 40px 0 20px 0;
+    }
+
+    #RecCard {
+        flex-direction: column;
+    }
+
+    #ridepackageicon {
+        width: 30px;
+        height: 30px;
+    }
+
+    #contact {
+        margin: 15% 0;
+    }
+
+    #paymentmain {
+        flex-direction: column;
+    }
+
+    #PaymentForm {
+        width: 80vw;
+        margin-top: 10%;
+    }
+
+    #amountsection {
+        width: 80vw !important;
+    }
+
+    #dropdown-list {
+        padding: 20px !important;
+    }
+
+    .dropdown-item {
+        font-size: 16px !important;
+        margin: 10px 0px;
+    }
+
+    #aboutusimg {
+        margin-top: 20%;
+        height: 200px;
+    }
+
+    #Aboutpagecontent {
+        margin-bottom: 10%;
+    }
+}
