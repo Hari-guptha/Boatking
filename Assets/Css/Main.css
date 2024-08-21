@@ -794,6 +794,139 @@ body {
     -webkit-filter: brightness(100%);
 }
 
+
+#LoginTitle{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#LoginTitle img{
+    width: 40px;
+    height: 35px;
+}
+
+#LoginTitle h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#loginbox{
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#loginbox input{
+    padding: 10px 30px;
+    font-size: 14px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgb(99, 99, 99);
+}
+#loginbtn{
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#loginbtn:hover{
+    background-color: var(--secondary-color);
+}
+
+#Dsidebar{
+    padding:5%;
+    flex-basis: 20%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+#DTitle{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#DTitle img{
+    width: 40px;
+    height: 40px;
+}
+
+#DTitle{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+#sItems h4{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    color: white;
+}
+#Dmainleave{
+    border-radius: 10px;
+    margin-top: 2%;
+    padding: 2%;
+    /* display: none; */
+    flex-basis: 80%;
+    height: fit-content;
+    margin-right:20px ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#DmainPrice{
+    border-radius: 10px;
+    margin-top: 2%;
+    padding: 2%;
+    display: none;
+    flex-basis: 80%;
+    margin-right:20px ;
+    height: fit-content;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pop{
+    from{
+        opacity: 0;
+        scale:  0.1;
+    }
+    to{
+        opacity: 1;
+        transform: 1;
+    }
+}
+
+.anm{
+    animation:  appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+
+.pop{
+    animation:  pop linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+
 @media only screen and (max-width:600px) {
     #sec1images {
         flex-direction: column;
@@ -805,7 +938,9 @@ body {
         padding-left: 0;
 
     }
-
+    #Dmain{
+        margin-top: 20%;
+    }
     #sec1rootimg {
         display: none;
     }
@@ -837,7 +972,14 @@ body {
     #FooterMain h5 {
         width: 80vw;
     }
-
+    #DmainPrice{
+        margin: 0;
+        padding: 20px;
+    }
+    #Dmainleave{
+        margin: 0;
+        padding: 20px;
+    }
     #FooterLinks {
         text-align: center;
         margin-top: 10%;
