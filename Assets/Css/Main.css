@@ -3,6 +3,22 @@
     --secondary-color: #1e475d;
 }
 
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -404,12 +420,15 @@ body {
 #FooterMain h4 {
     font-size: 16px;
     font-weight: 400;
+    cursor: default;
+
 }
 
 
 #FooterMain h5 {
     font-size: 12px;
     font-weight: 300;
+    cursor: default;
     width: 100%;
     margin-top: 0px;
 }
@@ -471,7 +490,7 @@ body {
 
 
 #FooterLinks h5:hover {
-    color: var(--secondary-color);
+    color:rgb(223, 223, 223)
 }
 
 #Normal_Package {
@@ -655,6 +674,7 @@ body {
     font-weight: 400;
     border: none;
     width: 95%;
+    color: var(--primary-color) !important;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 10px;
     padding: 10px;
@@ -915,6 +935,16 @@ body {
     }
 }
 
+#modelbtn{
+    background-color: var(--primary-color);
+    font-size: 14px !important;
+    color: white;
+}
+
+#modelbtn:hover{
+    background-color: var(--secondary-color);
+    color: white;
+}
 .anm{
     animation:  appear linear;
     animation-timeline: view();
@@ -1129,4 +1159,9 @@ body {
     #Aboutpagecontent {
         margin-bottom: 10%;
     }
+    .modal{
+        margin-top: 40%;
+        border-radius: 10px;
+    }
 }
+
